@@ -39,16 +39,15 @@ int main ()
     
     printf(" enter source directory name to open \n ") ;
     scanf("%s",dName1) ;
-
+    
+     printf(" before you enter destibnation directory ./ before entering derectory name and / in the end  \n ") ;
     printf(" enter destination directory name to open   \n ") ;
     scanf("%s",dName2) ;
 
 
     strcpy ( buffer , dName2) ;
 
-    
 
-   
     dir1 = opendir( dName1 ) ;
     dir2 = opendir( dName2 ) ;
 
@@ -72,7 +71,7 @@ int main ()
 
 
 
-        sprintf(&buffer[strlen(dName2 )] , entries->d_name ) ;
+        sprintf(&buffer[strlen(dName2)] , entries->d_name ) ;
 
 
         if (S_ISDIR (obj.st_mode))
