@@ -46,7 +46,7 @@ int main ()
 
     strcpy ( buffer , dName2) ;
 
-    lseek (  buffer  , strlen(dName2) , SEEK_SET ) ;
+    
 
    
     dir1 = opendir( dName1 ) ;
